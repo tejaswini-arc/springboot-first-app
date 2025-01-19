@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: V1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
   name: springboot-first-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-first-app
-          image: springboot-first-app-example:1.0
+          image: springboot-first-app:latest
           # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:

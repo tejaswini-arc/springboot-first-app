@@ -1,8 +1,8 @@
 apiVersion: V1
 kind: Application
 metadata:
-  name: myapp-V1
-  namespace: teju
+  name: springboot-first-app
+  namespace: nameSpace1
 spec:
   project: default
 
@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: spring-boot-k8s
+    namespace: nameSpace1
 
   syncPolicy:
     syncOptions:
