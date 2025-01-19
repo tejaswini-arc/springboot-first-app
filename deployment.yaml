@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-first-app
-          image: springboot-first-app:latest
+          image: springboot-first-app:V1
           # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
