@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: spring-boot-k8s
+        app: springboot-first-app
     spec:
       containers:
         - name: springboot-first-app
