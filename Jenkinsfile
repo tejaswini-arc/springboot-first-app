@@ -29,8 +29,8 @@ pipeline{
                     withCredentials([string(credentialsId: 'docker-hubs-ID', variable: 'docker-jenkins-pwd')]) {
     // some block
                 bat 'docker login -u tejaswiini -p %docker-jenkins-pwd%'
-                bat 'docker build -t tejaswiini/springboot-first-app .'
-                bat 'docker push tejaswiini/springboot-first-app'
+                bat 'docker build -t tejaswiini/springboot-first-app:V1 .'
+                bat 'docker push tejaswiini/springboot-first-app:V1'
 
                         }
                 }
